@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função 4</title>
+</head>
+<body>
+    <script>
+
+    var num = parseInt(prompt("Digite um número para saber seus divisores:"))
+        while (num <= 0 ){
+        var num = parseInt(prompt("Digite um número maior que zero:"))
+    }
+
+    document.write("Esses são os divisores de "+num+":<br>")
+
+    for(i = 1; i <= num; i++){
+        if (num % i == 0 ){
+            document.write(" "+i+"; ")
+        }
+    }
+
+    </script>
+</body>
+</html>

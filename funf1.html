@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+         
+        body {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Primeira Função</p><br>
+
+    <button onclick="mousemine()">Mouse minecraft</button>
+    <button onclick="mousenormal()">Mouse normal</button>
+
+    <script>
+     
+    var body = document.getElementsByTagName("body")[0]
+
+        function mousemine() {
+            body.style.cursor = "url(m2.png), default"
+        }
+        function mousenormal() {
+            body.style.cursor = "default"
+        }
+        function mouselivro() {
+            body.style.cursor = "url(m1.png), default"
+        }
+
+    </script>
+
+</body>
+
+</html>

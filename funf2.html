@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="loucura()">Ligar</button>
+    <button onclick="desligado()">Desligar</button>
+
+    <script>
+        var body = document.getElementsByTagName("body")[0]
+        var bool = 1
+        var intervalo
+
+        function loucura() {
+            intervalo = setInterval(trocaCor, 250);
+        }
+
+        function trocaCor() {
+            if (bool == 1) {
+                body.style.backgroundColor = "#0000FF"
+                bool = 2
+            } else if (bool == 2) {
+                body.style.backgroundColor = "#FF0000"
+                bool = 3
+            } else {
+                body.style.backgroundColor = "#00FF00"
+                bool = 1
+            }
+        }
+            function desligado() {
+                clearInterval(intervalo)
+                body.style.backgroundColor = "#FFFFFF"
+            }
+
+    </script>
+
+</body>
+
+</html>

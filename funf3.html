@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função 3</title>
+
+    <style>
+        body {
+            background-color: rgb(145, 140, 140);
+        }
+
+
+        #comum {
+           color: rgb(122, 224, 224); 
+        }
+
+        #raro {
+            color: rgb(22, 22, 253);
+        }
+
+        #epico {
+            color: blueviolet;
+        }
+
+        #mitico {
+            color: rgb(218, 28, 28);
+        }
+
+        #lendario {
+            color: rgb(255, 255, 0);
+        }
+
+        #w {
+            color: white;
+        }
+
+        #nulo {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var raridade;
+        var item = prompt("Digite o nome de seu item e veremos sua raridade:");
+        var sort = Math.round(50 * Math.random()); 
+    
+        if (0 < sort && sort <= 20){
+            alert("Seu item é Comum, mais sorte na próxima.");
+            document.write("<h1 id='w'> O nome de seu item é "+item+" e sua raridade é: <p id='comum'>Comum</p></h1>");
+        }
+        else if (20 < sort && sort <= 35){
+            alert("Seu item é Raro, legal.");
+            document.write("<h1 id='w'> O nome de seu item é "+item+" e sua raridade é: <p id='raro'>Raro</p></h1>");
+        }
+        else if (35 < sort && sort <= 45){
+            alert("Seu item é Épico, muito bom!");
+            document.write("<h1 id='w'> O nome de seu item é "+item+" e sua raridade é: <p id='epico'>Épico</p></h1>");
+        }
+        else if (45 < sort && sort <= 49){
+            alert("Seu item é Mítico, uau!");
+            document.write("<h1 id='w'> O nome de seu item é "+item+" e sua raridade é: <p id='mitico'>Mítico</p></h1>");
+        }
+        else if (sort === 50){
+            alert("Meu Deus! Seu item é Lendário!!!");
+            document.write("<h1 id='w'> O nome de seu item é "+item+" e sua raridade é: <p id='lendario'>Lendário</p></h1>");
+        }
+        else if (sort === 0){
+            alert("Err0r c0d3 item und3f1n3d Nulo¿");
+            document.write("<h1 id='w'> It3m und3f1n3d "+item+" r4r1ty: <p id='nulo'>Nulo</p></h1>");
+        }
+    </script>    
+    
+    <h1 id="w"> Chances: </h1>
+    <h1 id="comum"> Comum: 50% </h1> 
+    <h1 id="raro"> Raro: 25% </h1> 
+    <h1 id="epico"> Épico: 15% </h1> 
+    <h1 id="mitico"> Mítico: 8% </h1>
+    <h1 id="lendario"> Lendário: 2% </h1>
+    <h1 id="nulo"> Nulo: ???</h1>   
+</body>
+</html>

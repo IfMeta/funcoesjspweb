@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função 5</title>
+</head>
+<body>
+   <script>
+    var cont = 0
+    alert("Esse programa tem a função de identificar números primos:")
+    var num = parseInt(prompt("Digite um número para saber se ele é primo ou não:"))
+    while (num <= 0){
+           var num = parseInt(prompt("Digite um número maior que zero:"))
+    }
+
+    for (i = 1; i <= num; i++){
+    if (num % i == 0){cont = cont+1}
+    }
+
+    if (cont == 2){alert("Esse número é primo.")}
+    else {alert("Esse número não é primo.")}    
+
+   </script> 
+</body>
+</html>
